@@ -22,11 +22,13 @@ def input_day():
 
 #日付から年齢判定
 def enzan_day():
-    if input_day() <= dt_now.day :
+    kakutei_day = input_day()
+
+    if kakutei_day <= dt_now.day :
             age_d = input_year()
             return age_d
 
-    elif input_day() > dt_now.day :
+    elif kakutei_day > dt_now.day :
             age_d = input_year() - 1
             return age_d
 
